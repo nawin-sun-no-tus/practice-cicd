@@ -4,6 +4,13 @@ on:
   pull_request:
     branches:
       - main
+uses: garygrossgarten/github-action-scp@release
+    with:
+      local: test
+      remote: scp/directory
+      host: notus-web root@165.232.160.109
+      username: root
+      password: vUclmo&*U+a*r#0haDRl
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
